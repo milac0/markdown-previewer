@@ -51,14 +51,14 @@ alert(s);
   render(){
     return (
       <div className="App">
-      <div id="items">
+      <div className="items">
           <textarea
           id="editor"
           value={this.state.input}
           onChange={this.handleChange}
           ></textarea>
       </div>
-      <div id="items">
+      <div className="items">
       <div
       id="preview"
       contentEditable='true'
