@@ -1,22 +1,10 @@
 body {
-  background: #52b2ea;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-header {
-  background: #1B95E0;
-  color: #ffffff;
-  padding: 0.5em;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
 }
 
 .container {
@@ -28,7 +16,7 @@ header h1 {
 .item {
   background: #fafafa;
   width: 95%;
-  height: 555px;
+  height: vh;
   margin: 1em 0 0 0;
   border: 1px solid #000000;
   padding: 1em;

@@ -1,22 +1,11 @@
 body {
-  background: #52b2ea;
+  background: #1DA1F2;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-header {
-  background: #1B95E0;
-  color: #ffffff;
-  padding: 0.5em;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
 }
 
 .container {

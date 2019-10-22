@@ -3,9 +3,10 @@ import startingInput from "./util/startingInput";
 import marked from "marked";
 
 //mui
+import AppBar from "@material-ui/core/AppBar";
 import Typography from "@material-ui/core/Typography";
 
-const App = () => {
+const App = ({ classes }) => {
   const [markdown, setMarkdown] = useState(startingInput);
 
   const handleChange = e => {
@@ -18,14 +19,13 @@ const App = () => {
 
   return (
     <Fragment>
-      <header>
-        <h1>Markdown Previewer</h1>
-      </header>
+      <AppBar color="primary" position="static">
+        <Typography variant="h6" align="center">
+          Markdown Previewer
+        </Typography>
+      </AppBar>
       <div className="container">
         <div className="item">
-        <Typography variant="h6" align="center">
-          Input
-        </Typography>
           <textarea
             label="markdown"
             value={markdown}
@@ -33,9 +33,6 @@ const App = () => {
           />
         </div>
         <div className="item">
-        <Typography variant="h6" align="center">
-          Preview
-        </Typography>
           <p dangerouslySetInnerHTML={createMarkup()}></p>
         </div>
       </div>
